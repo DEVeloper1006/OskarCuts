@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OscarCuts</title>
+        <meta name="Author" content="Dev Mody">
+        <meta name="Description" content="Responsive Website for Oskar Chang's Barbershop business">
+        <link rel="stylesheet" href="/styles/index.css">
+        <link rel="icon" href="/images/logo.jpg" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="#"><img src="/images/logo.jpg" alt="logo" class="logo-image"></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Reservation</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="title-wrap">
+                <div class="title-container">
+                    <h2>Welcome To</h2>
+                    <h1></h1>
+                </div>
+            </div>
+        </main>
+
+        <script src="/index.js"></script>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed(".title-container h1", {
+                strings: ["OSCARCUTS"],
+                typeSpeed : 150,
+                backSpeed : 150,
+                loop : true
+            })
+        </script>
+    </body>
+</html>

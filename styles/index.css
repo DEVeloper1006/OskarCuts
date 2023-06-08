@@ -1,0 +1,160 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo-image {
+    width: 150px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(38, 36, 37);
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.nav-links li {
+    list-style: none;
+    transition: 0.25s;
+}
+
+.nav-links a {
+    color: rgb(255,215,0);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.25s;
+}
+
+.nav-links a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.nav-links li:hover {
+    transform: scale(1.2);
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 5px;
+    background-color: rgb(255,215,0);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:760px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 12vh;
+        background-color: rgb(38, 36, 37);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translate(0%);
+}
+
+body{
+    background-color: rgb(226, 226, 226);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.title-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/images/mesh-gradient.png);
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+}
+
+.title-container {
+    width: 75%; /* Can be in percentage also. */
+    height: 750px;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-container h2 {
+    font-size: 35px;
+    color: rgb(225, 225, 225);
+    user-select: none;
+}
+
+.title-container h1 {
+    font-size: 100px;
+    color: rgb(38, 36, 37);
+    margin-top: 50px;
+    text-align: center;
+    user-select: none;
+}
