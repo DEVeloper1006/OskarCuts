@@ -9,8 +9,35 @@ html {
     scroll-behavior: smooth;
 }
 
-.logo-image {
-    width: 150px;
+.logo a {
+    text-decoration: none;
+}
+
+.logo a h1 {
+    text-decoration: none;
+    color: rgb(226, 226, 226);
+    font-size: 40px;
+    padding-top: 7.5px;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+.logo {
+    border: 2px solid rgb(226, 226, 226);
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.logo:hover{
+    background-color: rgb(226, 226, 226);
+    transform: scale(1.2);
+}
+
+.logo a h1:hover {
+    color: rgb(130, 113, 21);
 }
 
 nav {
@@ -20,6 +47,7 @@ nav {
     min-height: 8vh;
     background-color: rgb(38, 36, 37);
     font-family: 'Poppins', sans-serif;
+    z-index: 5;
 }
 
 .nav-links {
@@ -34,7 +62,7 @@ nav {
 }
 
 .nav-links a {
-    color: rgb(255,215,0);
+    color: rgb(130, 113, 21);
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: bold;
@@ -72,8 +100,8 @@ nav {
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 92vh;
-        top: 12vh;
+        height: 100%;
+        top: 8.075vh;
         background-color: rgb(38, 36, 37);
         display: flex;
         flex-direction: column;
@@ -90,10 +118,15 @@ nav {
     .burger {
         display: block;
     }
+
+    .title-wrap {
+        height: 500px;
+    }
 }
 
 .nav-active {
     transform: translate(0%);
+    z-index: 5;
 }
 
 body{
@@ -146,15 +179,77 @@ body{
 }
 
 .title-container h2 {
-    font-size: 35px;
-    color: rgb(225, 225, 225);
+    font-size: 25px;
+    color: rgb(38,36,37);
     user-select: none;
 }
 
-.title-container h1 {
-    font-size: 100px;
-    color: rgb(38, 36, 37);
+.title-container #logo {
+    width: 85%;
     margin-top: 50px;
-    text-align: center;
-    user-select: none;
+    animation: fill 0.5s ease forwards 3.5s;
+    transition: 0.5s;
+}
+
+#logo path:nth-child(1){
+    stroke-dasharray: 506;
+    stroke-dashoffset: 506;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(2){
+    stroke-dasharray: 417;
+    stroke-dashoffset: 417;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+#logo path:nth-child(3){
+    stroke-dasharray: 496;
+    stroke-dashoffset: 496;
+    animation: line-anim 2s ease forwards 0.9s;
+}
+#logo path:nth-child(4){
+    stroke-dasharray: 451;
+    stroke-dashoffset: 451;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+#logo path:nth-child(5){
+    stroke-dasharray: 273;
+    stroke-dashoffset: 273;
+    animation: line-anim 2s ease forwards 1.5s;
+}
+#logo path:nth-child(6){
+    stroke-dasharray: 485;
+    stroke-dashoffset: 485;
+    animation: line-anim 2s ease forwards 1.8s;
+}
+#logo path:nth-child(7){
+    stroke-dasharray: 431;
+    stroke-dashoffset: 431;
+    animation: line-anim 2s ease forwards 2.1s;
+}
+#logo path:nth-child(8){
+    stroke-dasharray: 320;
+    stroke-dashoffset: 320;
+    animation: line-anim 2s ease forwards 2.4s;
+}
+
+#logo path:nth-child(9){
+    stroke-dasharray: 417;
+    stroke-dashoffset: 417;
+    animation: line-anim 2s ease forwards 2.7s;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset:0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+
+    to {
+        fill: rgb(38,36,37);
+    }
 }
