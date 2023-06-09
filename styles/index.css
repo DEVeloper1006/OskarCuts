@@ -163,12 +163,12 @@ body{
     background: url(/images/mesh-gradient.png);
     background-size: cover;
     width: 100%;
-    height: 1000px;
+    height: 925px;
 }
 
 .title-container {
     width: 75%; /* Can be in percentage also. */
-    height: 750px;
+    height: 500px;
     backdrop-filter: blur(10px);
     border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
