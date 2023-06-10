@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -163,7 +167,7 @@ body{
     background: url(/images/mesh-gradient.png);
     background-size: cover;
     width: 100%;
-    height: 925px;
+    height: 950px;
 }
 
 .title-container {
@@ -171,7 +175,7 @@ body{
     height: 500px;
     backdrop-filter: blur(10px);
     border-radius: 50px;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    display: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -252,4 +256,88 @@ body{
     to {
         fill: rgb(38,36,37);
     }
+}
+
+.non-hero {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.services {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-bg {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    z-index: -1;
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.serv-container {
+    width: 65%;
+    height: auto;
+    min-height: 600px;
+    backdrop-filter: blur(65px);
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.serv-container h1 {
+    font-size: 80px;
+    margin-top: 100px;
+    color: rgb(130, 113, 21);
+    font-weight: 900;
+    user-select: none;
+}
+
+.serv-container p {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(226, 226, 226);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 40px;
+    user-select: none;
+}
+
+.serv-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+    margin-top: 25px;
+    height: auto;
+}
+
+.serv-links a {
+    text-decoration: none;
+    color: rgb(38, 36, 37);
+    width: 80%;
+    height: 60px;
+    padding-top: 15px;
+    margin-left: 20px;
+    border:3px solid rgb(130, 113, 21);
+    background-color: rgb(256, 256, 256);
+    border-radius: 50px;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.serv-links a:hover {
+    background-color: rgb(21, 20, 20);
+    transform: scale(1.1);
+    color: rgb(130, 113, 21);
+    border-color: rgb(21, 20, 20);
 }
